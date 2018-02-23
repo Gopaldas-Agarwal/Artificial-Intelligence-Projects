@@ -1,2 +1,2 @@
 # Artificial-Intelligence-Projects
-Projects related to and using algorithms to solve challenging problems.
+Implementation of basic AI concepts such as searching and FOL resolution to solve problems. 
