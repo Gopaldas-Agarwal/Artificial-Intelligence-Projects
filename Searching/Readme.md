@@ -20,7 +20,7 @@ First line: instruction of which algorithm to use: BFS, DFS or SA<br/>
 Second line: strictly positive 32-bit integer n, the width and height of the square nursery<br/>
 Third line: strictly positive 32-bit integer p, the number of baby lizards<br/>
 Next n lines: the n x n nursery, one file line per nursery row (to show you where the trees are).
-It will have a 0 where there is nothing, and a 2 where there is a tree.<br/><br/><br/>
+It will have a 0 where there is nothing, and a 2 where there is a tree.<br/><br/>
 
 ---Output---<br/>
 The file output.txt which your program creates in the current directory should be
