@@ -644,7 +644,7 @@ public class Agent {
         int depth = 3;
 			
 			
-			if (fruitRage.mygame.remainingTime < 1) {
+	if (fruitRage.mygame.remainingTime < 1) {
             depth = 1;
         } else if (fruitRage.mygame.remainingTime < 2) {
             depth = 2;
