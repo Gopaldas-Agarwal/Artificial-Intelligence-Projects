@@ -1,10 +1,10 @@
 The project - software agent that can play this game against a human or another agent.Fruit Rage
 
----The game
+---The game---
 The Fruit Rage! a game that captures the nature of a zero sum two player game with
 strict limitation on allocated time for reasoning.
 
----Rules of the game
+---Rules of the game---
 The Fruit Rage is a two player game in which each player tries to maximize his/her share from a
 batch of fruits randomly placed in a box. The box is divided into cells and each cell is either empty
 or filled with one fruit of a specific type.
@@ -25,7 +25,7 @@ automatically lose the game. Hence you should think about strategies for best us
 The overall score of each player is the sum of rewards gained for every turn. The game will
 terminate when there is no fruit left in the box or when a player has run out of time.
 
----Input
+---Input---
 The file input.txt in the current directory of your program must be formatted as follows:
 First line: integer n, the width and height of the square board (0 < n < 26)
 Second line: integer p, the number of fruit types (0 < p < 9)
@@ -34,7 +34,7 @@ Next n lines: the n x n board, with one board row per input file line, and n cha
 line marker) on each line. Each character can be either a digit from 0 to p-1, or
 a * to denote an empty cell.
 
----Output
+---Output---
 The file output.txt which the program creates in the current directory is
 formatted as follows:
 First line: the selected move, represented as two characters:
