@@ -629,7 +629,7 @@ class PlayGame {
 
 }
 
-public class homework {
+public class Agent {
 
     public static void main(String[] args) {
 
