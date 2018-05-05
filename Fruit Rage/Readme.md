@@ -1,5 +1,6 @@
 The project -A software agent that can play this game against a human or another agent.
-Used alpha-beta pruning(https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) to optmize searching by reducing size the state space.
+Used alpha-beta pruning(https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning) to optmize searching by reducing size of the state space.
+
 The resulting agent can decide on the depth(the max-depth we can search before running out of time) for state space search depending on the complexity of the board and the remaining time. 
 The Agent always wins against a random playing agent.
 
