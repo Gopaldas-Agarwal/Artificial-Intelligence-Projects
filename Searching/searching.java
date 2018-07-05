@@ -1,5 +1,3 @@
-package homework1;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -9,7 +7,7 @@ import java.util.Random;
 import java.util.Stack;
 import java.util.Vector;
 
-public class Homework {
+public class Searching {
 
     public static String algo;
     public static short nurserySize;
@@ -18,15 +16,15 @@ public class Homework {
     public static LizardBFS answerBFS;
     public static LizardDFS answerDFS;
     public static LizardSA answerSA;
-    public static Homework homew;
+    public static Searching mysearch;
     public static String outputPath;
     public static String inputPath;
     public static void main(String[] args) {
-        outputPath="C:\\Users\\GOPAL\\Documents\\NetBeansProjects\\Homework1SA\\src\\homework1\\output.txt";
-        inputPath="C:\\Users\\GOPAL\\Documents\\NetBeansProjects\\Homework1SA\\src\\homework1\\input.txt";
-        homew = new Homework();
-        String inputString = homew.readInputFile();
-        homew.parseInput(inputString);
+        outputPath="";
+        inputPath="";
+        mysearch = new Searching();
+        String inputString = mysearch.readInputFile();
+        mysearch.parseInput(inputString);
         String temp = "Algo is" + algo + ".";
         if (algo.equals("BFS")) {
             performBFS();
@@ -42,24 +40,24 @@ public class Homework {
 
     public static void performBFS() {
         answerBFS = new LizardBFS(nurserySize, babyLizards, nursery);
-        homew.outputFile(answerBFS.finalState, answerBFS.nursery.myNursery, answerBFS.nursery.size);
+        mysearch.outputFile(answerBFS.finalState, answerBFS.nursery.myNursery, answerBFS.nursery.size);
     }
 
     public static void performDFS() {
         answerDFS = new LizardDFS(nurserySize, babyLizards, nursery);
-        homew.outputFile(answerDFS.finalState, answerDFS.nursery.myNursery, answerDFS.nursery.size);
+        mysearch.outputFile(answerDFS.finalState, answerDFS.nursery.myNursery, answerDFS.nursery.size);
     }
 
     public static void performSA() {
         answerSA = new LizardSA(nurserySize, babyLizards, nursery);
-        homew.outputFile(answerSA.finalState, answerSA.mainState.nursery, answerSA.size);
+        mysearch.outputFile(answerSA.finalState, answerSA.mainState.nursery, answerSA.size);
     }
 
     public static void performBoth() {
         answerDFS = new LizardDFS(nurserySize, babyLizards, nursery);
-        homew.outputFile(answerDFS.finalState, answerDFS.nursery.myNursery, answerDFS.nursery.size);
+        mysearch.outputFile(answerDFS.finalState, answerDFS.nursery.myNursery, answerDFS.nursery.size);
         answerBFS = new LizardBFS(nurserySize, babyLizards, nursery);
-        homew.outputFile(answerBFS.finalState, answerBFS.nursery.myNursery, answerBFS.nursery.size);
+        mysearch.outputFile(answerBFS.finalState, answerBFS.nursery.myNursery, answerBFS.nursery.size);
     }
 
     /*
