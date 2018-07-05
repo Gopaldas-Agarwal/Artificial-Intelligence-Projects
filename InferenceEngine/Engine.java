@@ -1,4 +1,3 @@
-package homework3d;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -12,7 +11,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class homework {
+public class Engine {
 
     public static void main(String[] args) {
         Data mydata = new Data();
@@ -47,12 +46,12 @@ class ReadFile {
     ReadFile() {
         query = new ArrayList<>();
         kb = new ArrayList<>();
-        inputPath = "C:\\Users\\GOPAL\\Documents\\NetBeansProjects\\Homework3d\\src\\homework3d\\input.txt";
+        inputPath = "";
         tempData = new Data();
     }
 
     void setPath(int k) {
-        inputPath = "F:\\USC\\Semester 1\\AI\\Assignment 3\\Example test cases hw3\\input" + k + ".txt";
+        inputPath = "";
     }
 
     Data getInputFromFile() {
@@ -161,7 +160,7 @@ class InferenceEngine {
 
     InferenceEngine(Data d) {
         mainData = d;
-        outputPath = "C:\\Users\\GOPAL\\Documents\\NetBeansProjects\\Homework3d\\src\\homework3d\\output.txt";
+        outputPath = "";
     }
 
     void startResolution() {
